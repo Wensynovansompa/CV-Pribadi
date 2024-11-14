@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./assets/css/styles.css";
 import Profile from "./assets/img/Wensy2.jpg";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
@@ -14,8 +15,6 @@ function App() {
       <meta name="author" content />
       <title>CV Pribadi</title>
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-      {/* Font Awesome icons (free version)*/}
-      {/* Google fonts*/}
       <link
         href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
         rel="stylesheet"
@@ -26,9 +25,7 @@ function App() {
         rel="stylesheet"
         type="text/css"
       />
-      {/* Core theme CSS (includes Bootstrap)*/}
       <link href="css/styles.css" rel="stylesheet" />
-      {/* Navigation*/}
       <nav
         className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
         id="sideNav"
@@ -37,7 +34,7 @@ function App() {
           <span className="d-block d-lg-none">Wensy Sompa</span>
           <span className="d-none d-lg-block">
             <img
-              className="img-fluid img-profile rounded-circle mx-auto mb-2"
+              className="img-fluid img-profile rounded-circle mx-auto mb-20"
               src={Profile}
               alt="profile"
             />
@@ -57,33 +54,28 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#about">
-                About
+              <a className="nav-link js-scroll-trigger" href="#Tentang saya">
+                Tentang Saya
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#experience">
-                Experience
+              <a className="nav-link js-scroll-trigger" href="#Pengalaman">
+                pengalaman
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#education">
-                Education
+              <a className="nav-link js-scroll-trigger" href="#Pendidikan">
+                Pendidikan
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#skills">
-                Skills
+              <a className="nav-link js-scroll-trigger" href="#Keahlian">
+                Keahlian
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#interests">
-                Interests
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#awards">
-                Awards
+              <a className="nav-link js-scroll-trigger" href="#Hobi">
+                Hobi
               </a>
             </li>
           </ul>
@@ -92,7 +84,7 @@ function App() {
       {/* Page Content*/}
       <div className="container-fluid p-0">
         {/* About*/}
-        <section className="resume-section" id="about">
+        <section className="resume-section" id="Tentang saya">
           <div className="resume-section-content">
             <h1 className="mb-0">
               Wensy
@@ -126,9 +118,9 @@ function App() {
         </section>
         <hr className="m-0" />
         {/* Experience*/}
-        <section className="resume-section" id="experience">
+        <section className="resume-section" id="Pengalaman">
           <div className="resume-section-content">
-            <h2 className="mb-5">Experience</h2>
+            <h2 className="mb-5">Pengalaman</h2>
             <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div className="flex-grow-1">
                 <h3 className="mb-0">Mahasiswa</h3>
@@ -144,7 +136,7 @@ function App() {
                 </p>
               </div>
               <div className="flex-shrink-0">
-                <span className="text-primary">March 2013 - Present</span>
+                <span className="text-primary">Juli 2019 - Present</span>
               </div>
             </div>
             <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -164,7 +156,7 @@ function App() {
                 </p>
               </div>
               <div className="flex-shrink-0">
-                <span className="text-primary">December 2011 - March 2013</span>
+                <span className="text-primary">Desember 2022 - Maret 2023</span>
               </div>
             </div>
             <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -184,45 +176,41 @@ function App() {
                 </p>
               </div>
               <div className="flex-shrink-0">
-                <span className="text-primary">July 2010 - December 2011</span>
-              </div>
-            </div>
-            <div className="d-flex flex-column flex-md-row justify-content-between">
-              <div className="flex-grow-1">
-                <h3 className="mb-0">Manager Restoran</h3>
-                <div className="subheading mb-3">
-                  RM Sabrina Seafood and Resto
-                </div>
-                <p>
-                  Saya memimpin tim dalam mengelola operasi sehari-hari dan
-                  memastikan bahwa layanan pelanggan berjalan dengan lancar.
-                  Saya terlibat dalam pengelolaan pasar dan jaringan yang
-                  memberdayakan proses operasional restoran, sambil memastikan
-                  kualitas layanan tetap tinggi. Saya bekerja untuk
-                  memaksimalkan efisiensi dan menciptakan lingkungan yang
-                  memungkinkan tim untuk mencapai tujuan bersama, serta
-                  menciptakan pengalaman positif bagi pelanggan melalui
-                  manajemen yang dinamis.
-                </p>
-              </div>
-              <div className="flex-shrink-0">
-                <span className="text-primary">September 2008 - June 2010</span>
+                <span className="text-primary">Juli 2021 - Desember 2023</span>
               </div>
             </div>
           </div>
         </section>
         <hr className="m-0" />
         {/* Education*/}
-        <section className="resume-section" id="education">
+        <section className="resume-section" id="Pendidikan">
           <div className="resume-section-content">
-            <h2 className="mb-5">Education</h2>
+            <h2 className="mb-5">Pendidikan</h2>
+            <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div className="flex-grow-1">
+                <h3 className="mb-0">SD Advent Tanawangko</h3>
+                <div className="subheading mb-3">Sekolah Dasar </div>
+              </div>
+              <div className="flex-shrink-0">
+                <span className="text-primary">Juli 2007 - juni 2012</span>
+              </div>
+            </div>
+            <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div className="flex-grow-1">
+                <h3 className="mb-0">SMP Advent Tanawangko</h3>
+                <div className="subheading mb-3">Sekolah Menegah Pertama </div>
+              </div>
+              <div className="flex-shrink-0">
+                <span className="text-primary">Juli 2012 - juni 2015</span>
+              </div>
+            </div>
             <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
               <div className="flex-grow-1">
                 <h3 className="mb-0">SMA Prisma Manado</h3>
                 <div className="subheading mb-3">Ilmu Pengetahuan Sosial</div>
               </div>
               <div className="flex-shrink-0">
-                <span className="text-primary">Juli 2015 - May 2018</span>
+                <span className="text-primary">Juli 2015 - Mei 2018</span>
               </div>
             </div>
             <div className="d-flex flex-column flex-md-row justify-content-between">
@@ -231,167 +219,77 @@ function App() {
                 <div className="subheading mb-3">Sistem Informasi</div>
               </div>
               <div className="flex-shrink-0">
-                <span className="text-primary">Agustus 2019 - Mei 2025</span>
+                <span className="text-primary">Juli 2019 - Present</span>
               </div>
             </div>
           </div>
         </section>
         <hr className="m-0" />
         {/* Skills*/}
-        <section className="resume-section" id="skills">
+        <section className="resume-section" id="Keahlian">
           <div className="resume-section-content">
-            <h2 className="mb-5">Skills</h2>
+            <h2 className="mb-2">Keahlian</h2>
             <div className="subheading mb-3">
-              Programming Languages &amp; Tools
+              Programming Languages & Smartphone Technician
+              <ul class="list-inline dev-icons">
+                <li class="list-inline-item">
+                  <i class="fab fa-react"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fab fa-node-js"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fab fa-wordpress"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fab fa-npm"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fab fa-vuejs"></i>
+                </li>
+              </ul>
             </div>
-            <ul className="list-inline dev-icons">
-              <li className="list-inline-item">
-                <i className="fab fa-html5" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-css3-alt" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-js-square" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-angular" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-react" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-node-js" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-sass" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-less" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-wordpress" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-gulp" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-grunt" />
-              </li>
-              <li className="list-inline-item">
-                <i className="fab fa-npm" />
-              </li>
-            </ul>
             <div className="subheading mb-3">Workflow</div>
             <ul className="fa-ul mb-0">
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check" />
                 </span>
-                Mobile-First, Responsive Design
+                Front-End Coding
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check" />
                 </span>
-                Cross Browser Testing &amp; Debugging
+                Repair Hardware & Software
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check" />
                 </span>
-                Cross Functional Teams
+                Web Development
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check" />
                 </span>
-                Agile Development &amp; Scrum
+                Web Design
               </li>
             </ul>
           </div>
         </section>
         <hr className="m-0" />
         {/* Interests*/}
-        <section className="resume-section" id="interests">
+        <section className="resume-section" id="Hobi">
           <div className="resume-section-content">
-            <h2 className="mb-5">Interests</h2>
-            <p>
-              Apart from being a web developer, I enjoy most of my time being
-              outdoors. In the winter, I am an avid skier and novice ice
-              climber. During the warmer months here in Colorado, I enjoy
-              mountain biking, free climbing, and kayaking.
-            </p>
-            <p className="mb-0">
-              When forced indoors, I follow a number of sci-fi and fantasy genre
-              movies and television shows, I am an aspiring chef, and I spend a
-              large amount of my free time exploring the latest technology
-              advancements in the front-end web development world.
-            </p>
-          </div>
-        </section>
-        <hr className="m-0" />
-        {/* Awards*/}
-        <section className="resume-section" id="awards">
-          <div className="resume-section-content">
-            <h2 className="mb-5">Awards &amp; Certifications</h2>
-            <ul className="fa-ul mb-0">
-              <li>
-                <span className="fa-li">
-                  <i className="fas fa-trophy text-warning" />
-                </span>
-                Google Analytics Certified Developer
-              </li>
-              <li>
-                <span className="fa-li">
-                  <i className="fas fa-trophy text-warning" />
-                </span>
-                Mobile Web Specialist - Google Certification
-              </li>
-              <li>
-                <span className="fa-li">
-                  <i className="fas fa-trophy text-warning" />
-                </span>
-                1<sup>st</sup>
-                Place - University of Colorado Boulder - Emerging Tech
-                Competition 2009
-              </li>
-              <li>
-                <span className="fa-li">
-                  <i className="fas fa-trophy text-warning" />
-                </span>
-                1<sup>st</sup>
-                Place - University of Colorado Boulder - Adobe Creative Jam 2008
-                (UI Design Category)
-              </li>
-              <li>
-                <span className="fa-li">
-                  <i className="fas fa-trophy text-warning" />
-                </span>
-                2<sup>nd</sup>
-                Place - University of Colorado Boulder - Emerging Tech
-                Competition 2008
-              </li>
-              <li>
-                <span className="fa-li">
-                  <i className="fas fa-trophy text-warning" />
-                </span>
-                1<sup>st</sup>
-                Place - James Buchanan High School - Hackathon 2006
-              </li>
-              <li>
-                <span className="fa-li">
-                  <i className="fas fa-trophy text-warning" />
-                </span>
-                3<sup>rd</sup>
-                Place - James Buchanan High School - Hackathon 2005
-              </li>
-            </ul>
+            <h2 className="mb-5">Hobi</h2>
+            <p>Mendengarkan Musik</p>
+            <p>Karaoke </p>
+            <p>Bermain Game</p>
+            <p>Traveling</p>
           </div>
         </section>
       </div>
-      {/* Bootstrap core JS*/}
-      {/* Core theme JS*/}
     </div>
   );
 }
