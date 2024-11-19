@@ -7,10 +7,10 @@ const Interest = () => {
       <section className="resume-section" id="interest">
         <div className="resume-section-content">
           <h2 className="mb-5">Interests</h2>
-          <p>Mendengarkan Musik</p>
-          <p>Karaoke </p>
-          <p>Bermain Game</p>
-          <p>Traveling</p>
+          <p style={{ fontSize: "22px" }}>Mendengarkan Musik</p>
+          <p style={{ fontSize: "22px" }}>Karaoke</p>
+          <p style={{ fontSize: "22px" }}>Bermain Game</p>
+          <p style={{ fontSize: "22px" }}>Traveling</p>
         </div>
       </section>
     </div>
