@@ -1,7 +1,21 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
 
 const About = () => {
+  const [About, setAbout] = useState({});
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    const db = getDatabase();
+    setLoading(true);
+    const AboutRef = ref(db, "about/");
+    onValue(AboutRef, (snapshot) => {
+      const data = snapshot.val();
+      setAbout(data);
+      setLoading(false);
+    });
+  }, []);
   return (
     <div>
       <div className="container-fluid p-0"></div>
@@ -29,13 +43,13 @@ const About = () => {
           </p>
           <div className="social-icons">
             <a className="social-icon" href="#!">
-              <i className="fab fa-linkedin-in" />
+              <i className="fab fa-whatsapp" />
             </a>
             <a className="social-icon" href="#!">
               <i className="fab fa-github" />
             </a>
             <a className="social-icon" href="#!">
-              <i className="fab fa-twitter" />
+              <i className="fab fa-instagram" />
             </a>
             <a className="social-icon" href="#!">
               <i className="fab fa-facebook-f" />
