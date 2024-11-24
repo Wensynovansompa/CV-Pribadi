@@ -21,7 +21,7 @@ const Navbar = () => {
       />
       <meta name="description" content />
       <meta name="author" content />
-      <title>{navbar.navbar1}</title>
+      <title>Cv Pribadi</title>
       <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
       <link
         href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
@@ -39,7 +39,7 @@ const Navbar = () => {
         id="sideNav"
       >
         <a className="navbar-brand js-scroll-trigger" href="#page-top">
-          <span className="d-block d-lg-none">{navbar.navbar2}</span>
+          <span className="d-block d-lg-none">Wensy Novan</span>
           <span className="d-none d-lg-block">
             <img
               className="img-fluid img-profile rounded-circle mx-auto mb-20"
@@ -63,27 +63,27 @@ const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#about">
-                {navbar.navbar3}
+                {navbar.navbar1}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#experience">
-                {navbar.navbar4}
+                {navbar.navbar2}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#education">
-                {navbar.navbar5}
+              <a className="nav-link js-scroll-trigger" href="#educations">
+                {navbar.navbar3}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#skills">
-                {navbar.navbar6}
+                {navbar.navbar4}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#interest">
-                {navbar.navbar7}
+              <a className="nav-link js-scroll-trigger" href="#interests">
+                {navbar.navbar5}
               </a>
             </li>
           </ul>
